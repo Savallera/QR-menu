@@ -1,10 +1,20 @@
 @font-face {
-  font-family: 'Autumn Sweater';
+  font-family: 'Open Sans';
   src:
-    local('Autumn Sweater'),
-    local('Autumn-Sweater'),
-    url(./Autumn-Sweater.woff) format('woff'),
-    url(./Autumn-Sweater.woff2) format('woff2');
-  font-weight: normal;
+    local('Open Sans'),
+    local('OpenSans'),
+    url(./OpenSans-Variable.woff2) format('woff2 supports variations'),
+    url(./OpenSans-Variable.woff2) format('woff2-variations');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src:
+    local('Raleway'),
+    url(./Raleway-Variable.woff2) format('woff2 supports variations'),
+    url(./Raleway-Variable.woff2) format('woff2-variations');
+  font-weight: 600 700;
   font-display: swap;
 }

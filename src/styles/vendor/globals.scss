@@ -17,21 +17,21 @@ body {
   background-color: var(--main-bg-color, #f0f0f0);
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p {
-//   margin: 0;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-// ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 picture {
   margin: 0;
@@ -46,6 +46,6 @@ a {
   line-height: inherit;
 }
 
-:focus {
+:focus, :focus-visible {
   outline: none;
 }
