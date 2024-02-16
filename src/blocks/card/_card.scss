@@ -74,7 +74,7 @@
     align-items: center;
   }
 
-  &__panel {
+  &__controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,9 +93,6 @@
     align-items: center;
     justify-content: center;
     gap: 0.5em;
-  }
-
-  &__button {
   }
 
   &__detail-modal {
@@ -122,10 +119,6 @@
   &__count {
     text-align: center;
     inline-size: 2.5rem;
-  }
-
-  &__price {
-    margin-inline: auto;
   }
 
   &_detail-modal-opened {
