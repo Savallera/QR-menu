@@ -9,7 +9,9 @@
   --grey-100: #f5f5f5;
   --white: #ffffff;
 
-  --main-bg-color: var(--grey-100);
+  --main-bg-color: var(--white);
+  --main-low-bg-color: var(--grey-100);
+
   --main-color: #f43f5e;
   --main-color-opacity: 244, 63, 94;
   --main-text-color: var(--grey-800);
@@ -26,7 +28,7 @@
 
   --box-shadow-sm: 0 0 2px rgb(100 112 103 / 0.25);
   --box-shadow-md: 0 0 4px rgb(100 112 103 / 0.25);
-  --box-shadow-selected: 0 0 4px rgba(var(--main-color-opacity), 0.25);
+  --box-shadow-selected: 0 0 0 4px rgba(var(--main-color-opacity), 0.5);
 
   --border-radius-sm: 8px;
   --border-radius-md: 14px;
@@ -50,9 +52,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-bg-color: var(--grey-200);
+    --main-bg-color: var(--grey-800);
+    --main-low-bg-color: var(--grey-700);
     --main-text-color: var(--white);
-    --main-text-low-color: var(--grey-600);
+    --main-text-low-color: var(--grey-200);
     --main-button-color: var(--main-color);
   }
 }

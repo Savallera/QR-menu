@@ -1,4 +1,22 @@
+// globals
 @import './vendor/globals';
 @import './vendor/variables';
+
+// UI
+@import '../blocks/icon/icon';
+@import '../blocks/icon-button/icon-button';
+
+// layout
+@import '../blocks/page/page';
 @import '../blocks/header/header';
 @import '../blocks/footer/footer';
+
+// Sections
+@import '../blocks/main-banner/main-banner';
+
+// Modals
+
+// Blocks
+@import '../blocks/lang-panel/lang-panel';
+@import '../blocks/menu/menu';
+@import '../blocks/card/card';

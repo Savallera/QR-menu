@@ -1,0 +1,82 @@
+.card {
+  position: relative;
+  background-color: var(--main-low-bg-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow-sm);
+  padding: 0.5em;
+
+  &__picture {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-lg);
+  }
+
+  &__info-button {
+    position: absolute;
+    inset: auto auto 0 0;
+    background-color: inherit;
+    border-top-right-radius: var(--border-radius-md);
+  }
+
+  &__main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  &__title {
+    font-variation-settings: 'wght' 600;
+    font-size: var(--heading-font-lg);
+  }
+
+  &__description {
+    font-size: var(--text-font-sm);
+  }
+
+  &__note {
+    font-size: var(--text-font-sm);
+
+    &_content_time {
+    }
+  }
+
+  &__decor {
+    background-color: var(--main-bg-color);
+    border-radius: var(--border-radius-sm);
+    padding-inline: .25rem;
+  }
+
+  &__time {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__panel {
+  }
+
+  &__caption {
+    font-size: 1.25em;
+    font-variation-settings: 'wght' 700;
+  }
+
+  &__button {
+  }
+
+  &__detail-modal {
+  }
+
+  &__close-button {
+  }
+
+  &__count {
+  }
+
+  &__price {
+  }
+}

@@ -6,7 +6,7 @@ import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import fileInclude from 'gulp-file-include';
 import htmlmin from 'gulp-htmlmin';
-import webpHtml from 'gulp-webp-html';
+// import webpHtml from 'gulp-webp-html';
 
 export default () => {
   return gulp
@@ -20,7 +20,7 @@ export default () => {
       })
     )
     .pipe(fileInclude())
-    .pipe(webpHtml())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(webpHtml())
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(path.html.dest));
 };

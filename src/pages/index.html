@@ -5,7 +5,193 @@
     <div class="page">
       @@include("../blocks/header/header.html")
       <main class="page__content">
-        <h2>Main</h2>
+        <section class="main-banner">
+          <div class="main-banner__panel">
+            <button
+              class="icon-button icon icon--type-search"
+              type="button"
+              aria-label="Поиск"
+            ></button>
+            <div class="lang-panel">
+              <button
+                class="lang-panel__button"
+                type="button"
+                aria-label="Выбор языка"
+              >
+                <span class="lang-panel__button-text">RU</span>
+                <span
+                  class="lang-panel__button-icon icon icon--type-drop-down"
+                ></span>
+              </button>
+              <div class="lang-panel__container">
+                <ul class="lang-panel__list">
+                  <li class="lang-panel__item lang-panel__item_actived">
+                    <span class="lang-panel__accent">RU</span> - Русский
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">EN</span> - English
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">FR</span> - Français
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">DE</span> - German
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-banner__title-block">
+            <img
+              class="main-banner__logo"
+              src="./images/favicon/favicon.svg"
+              alt="Описание логотипа"
+            />
+            <h1 class="main-banner__title">Итальянское кафе «Пармезано»</h1>
+          </div>
+        </section>
+        <nav class="menu page__menu-section">
+          <div class="menu__overflow">
+            <ul class="menu__list">
+              <li class="menu__item menu__item_actived">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <p class="menu__text menu__cut-text">Горячие блюда</p>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <p class="menu__text menu__cut-text">Салаты</p>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <p class="menu__text menu__cut-text">Закуски</p>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <p class="menu__text menu__cut-text">Напитки</p>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <p class="menu__text menu__cut-text">Алкоголь</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__overflow">
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item menu__sub-item_actived">
+                <p class="menu__text">Мясо</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Рыба</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Вегетарианские блюда</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Мясо</p>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="page__section">
+          <div class="page__title-block">
+            <h2 class="page__title">Мясо / Свинина</h2>
+            <div class="page__controls">
+              <button
+                class="icon-button icon icon--type-card-deck"
+                type="button"
+                aria-label="Плитка"
+              ></button>
+              <button
+                class="icon-button icon icon--type-list"
+                type="button"
+                aria-label="Список"
+              ></button>
+            </div>
+          </div>
+          <ul class="page__card-deck">
+            <li>
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Бефстроганов</h3>
+                  <div class="card__description">
+                    <p>
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами.
+                    </p>
+                  </div>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__panel">
+                  <p class="card__caption card__price">570 ₽</p>
+                  <button
+                    class="icon-button icon icon--type-minus card__button"
+                    aria-label="Удалить"
+                  ></button>
+                  <p class="card__caption card__count">1</p>
+                  <button
+                    class="icon-button icon icon--type-plus card__button"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__main-info">
+                    <h3 class="card__title">Бефстроганов</h3>
+                    <div class="card__description">
+                      <p>
+                        Фирменное блюдо. Подаем с легким салатным миксом со
+                        свежими помидорами.
+                      </p>
+                    </div>
+                    <p class="card__note card__note_content_time">
+                      200 гр./130 гр./30 гр.
+                      <span class="card__time"
+                        ><span class="icon icon--type-time"></span>45м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <h2 class="page__title">Мясо / Говядина</h2>
+        </section>
       </main>
       @@include("../blocks/footer/footer.html")
     </div>

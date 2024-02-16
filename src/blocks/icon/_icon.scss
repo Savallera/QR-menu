@@ -1,0 +1,99 @@
+/* Блок для иконок */
+.icon {
+  color: inherit;
+
+  &::before {
+    content: '';
+    background-color: currentColor;
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  &--type {
+    &-alcohol::before {
+      mask-image: url('../images/icons.svg#alcohol');
+    }
+    &-back::before {
+      mask-image: url('../images/icons.svg#back');
+    }
+    &-burger::before {
+      mask-image: url('../images/icons.svg#burger');
+    }
+    &-card-deck::before {
+      mask-image: url('../images/icons.svg#card-deck');
+    }
+    &-close::before {
+      mask-image: url('../images/icons.svg#close');
+    }
+    &-desserts::before {
+      mask-image: url('../images/icons.svg#desserts');
+    }
+    &-drinks::before {
+      mask-image: url('../images/icons.svg#drinks');
+    }
+    &-drop-down::before {
+      mask-image: url('../images/icons.svg#drop-down');
+    }
+    &-fish::before {
+      mask-image: url('../images/icons.svg#fish');
+    }
+    &-fruit::before {
+      mask-image: url('../images/icons.svg#fruit');
+    }
+    &-hot-dish::before {
+      mask-image: url('../images/icons.svg#hot-dish');
+    }
+    &-info::before {
+      mask-image: url('../images/icons.svg#info');
+    }
+    &-list::before {
+      mask-image: url('../images/icons.svg#list');
+    }
+    &-meat::before {
+      mask-image: url('../images/icons.svg#meat');
+    }
+    &-minus::before {
+      mask-image: url('../images/icons.svg#minus');
+    }
+    &-notification::before {
+      mask-image: url('../images/icons.svg#notification');
+    }
+    &-pasta::before {
+      mask-image: url('../images/icons.svg#pasta');
+    }
+    &-pizza::before {
+      mask-image: url('../images/icons.svg#pizza');
+    }
+    &-plus::before {
+      mask-image: url('../images/icons.svg#plus');
+    }
+    &-salads::before {
+      mask-image: url('../images/icons.svg#salads');
+    }
+    &-sandwich::before {
+      mask-image: url('../images/icons.svg#sandwich');
+    }
+    &-search::before {
+      mask-image: url('../images/icons.svg#search');
+    }
+    &-soup::before {
+      mask-image: url('../images/icons.svg#soup');
+    }
+    &-sushi::before {
+      mask-image: url('../images/icons.svg#sushi');
+    }
+    &-time::before {
+      mask-image: url('../images/icons.svg#time');
+    }
+    &-trash::before {
+      mask-image: url('../images/icons.svg#trash');
+    }
+    &-vegetables::before {
+      mask-image: url('../images/icons.svg#vegetables');
+    }
+  }
+}

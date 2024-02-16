@@ -1,0 +1,26 @@
+/* Блок иконка-кнопка */
+.icon-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.25em;
+  inline-size: 2em;
+  block-size: 2em;
+  color: inherit;
+  border-radius: var(--border-radius-sm);
+  transition: transform 0.35s;
+
+  &:active {
+    transform: scale(1.1);
+  }
+
+  &_theme_outline {
+    color: var(--grey-600);
+    border-color: var(--grey-400);
+  }
+
+  &_theme_main {
+    color: var(--white);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+}
