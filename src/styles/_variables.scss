@@ -9,14 +9,16 @@
   --grey-100: #f5f5f5;
   --white: #ffffff;
 
-  --main-bg-color: var(--white);
-  --main-low-bg-color: var(--grey-100);
+  --bg-color: var(--white);
+  --bg-low-color: var(--grey-100);
+  --bg-blur-color: rgb(255 255 255 / 0.8);
 
   --main-color: #f43f5e;
   --main-color-opacity: 244, 63, 94;
-  --main-text-color: var(--grey-800);
-  --main-text-low-color: var(--grey-600);
-  --main-button-color: var(--grey-800);
+
+  --text-color: var(--grey-800);
+  --text-low-color: var(--grey-600);
+  --button-color: var(--grey-800);
 
   --main-font-family: 'Open Sans', sans-serif;
   --heading-font-family: 'Raleway', sans-serif;
@@ -52,10 +54,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-bg-color: var(--grey-800);
-    --main-low-bg-color: var(--grey-700);
-    --main-text-color: var(--white);
-    --main-text-low-color: var(--grey-200);
-    --main-button-color: var(--main-color);
+    --bg-color: var(--grey-800);
+    --bg-low-color: var(--grey-700);
+    --bg-blur-color: rgb(47 60 51 / 0.8);
+
+    --text-color: var(--white);
+    --text-low-color: var(--grey-200);
+    --button-color: var(--main-color);
   }
 }

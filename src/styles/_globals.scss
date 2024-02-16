@@ -13,8 +13,8 @@ body {
   margin: 0;
   font-family: var(--main-font-family, 'Open Sans', sans-serif);
   font-size: 16px;
-  color: var(--main-text-color);
-  background-color: var(--main-bg-color, #f5f5f5);
+  color: var(--text-color);
+  background-color: var(--bg-color, #f5f5f5);
 }
 
 h1,

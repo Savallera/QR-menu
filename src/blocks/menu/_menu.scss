@@ -1,6 +1,10 @@
 .menu {
+  margin-block-start: -2.5em;
   display: grid;
   gap: 1em;
+  padding: 1em;
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+  background-color: var(--bg-color);
 
   &__overflow {
     margin: -4px;
@@ -16,10 +20,10 @@
   }
 
   &__item {
-    color: var(--main-text-low-color);
+    color: var(--text-low-color);
 
     &_actived {
-      color: var(--main-text-color);
+      color: var(--text-color);
 
       .menu__image {
         box-shadow: var(--box-shadow-selected);
@@ -30,14 +34,14 @@
   &__sub-list {
     display: flex;
     inline-size: max-content;
-    background-color: var(--main-low-bg-color);
+    background-color: var(--bg-low-color);
     border-radius: var(--border-radius-sm);
     gap: 0.5em;
   }
 
   &__sub-item {
     padding: 0.25em 0.5em;
-    color: var(--main-text-low-color);
+    color: var(--text-low-color);
     border-radius: var(--border-radius-sm);
 
     &_actived {
@@ -65,8 +69,6 @@
 
   &__cut-text {
     max-inline-size: 4.5rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    @extend %cut-text;
   }
 }

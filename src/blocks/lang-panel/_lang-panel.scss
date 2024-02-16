@@ -26,38 +26,20 @@
     position: absolute;
     inset: 100% 0 auto auto;
     inline-size: max-content;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-color);
     border-radius: var(--border-radius-sm);
     box-shadow: var(--box-shadow-sm);
     padding: 0.25em;
-    color: var(--main-text-color);
+    color: var(--text-color);
 
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    transition:
-      visibility 0s 0.35s,
-      opacity 0.35s;
+    @extend %hidden-block;
   }
 
   &__list {
     max-block-size: 9em;
     overflow: auto;
 
-    &::-webkit-scrollbar {
-      width: 0.25em;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: transparent;
-      border-radius: var(--border-radius-sm);
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--main-low-bg-color);
-      border-radius: var(--border-radius-sm);
-    }
+    @include scroll-bar(0.25em, transparent, var(--bg-low-color));
   }
 
   &__item {
@@ -66,7 +48,7 @@
     font-size: var(--text-font-md);
 
     &_actived {
-      background-color: var(--main-low-bg-color);
+      background-color: var(--bg-low-color);
       border-radius: var(--border-radius-sm);
       color: var(--main-color);
     }
@@ -82,13 +64,7 @@
     }
 
     .lang-panel__container {
-      visibility: visible;
-      opacity: 1;
-      pointer-events: all;
-      user-select: initial;
-      transition:
-        visibility 0s,
-        opacity 0.35s;
+      @extend %visibility-block;
     }
   }
 }

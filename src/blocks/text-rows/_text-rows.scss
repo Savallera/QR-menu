@@ -1,0 +1,6 @@
+.text-rows {
+  @include clamp(1);
+}
+.text-rows-lg {
+  @include clamp(4);
+}

@@ -50,7 +50,7 @@
             <h1 class="main-banner__title">Итальянское кафе «Пармезано»</h1>
           </div>
         </section>
-        <nav class="menu page__menu-section">
+        <nav class="menu">
           <div class="menu__overflow">
             <ul class="menu__list">
               <li class="menu__item menu__item_actived">
@@ -112,12 +112,12 @@
             </ul>
           </div>
         </nav>
-        <section class="page__section">
+        <section class="page__section page__section_bg-low">
           <div class="page__title-block">
             <h2 class="page__title">Мясо / Свинина</h2>
             <div class="page__controls">
               <button
-                class="icon-button icon icon--type-card-deck"
+                class="icon-button icon-button_actived icon icon--type-card-deck"
                 type="button"
                 aria-label="Плитка"
               ></button>
@@ -129,7 +129,61 @@
             </div>
           </div>
           <ul class="page__card-deck">
-            <li>
+            <li class="page__card-deck-item">
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Поке с креветками</h3>
+                  <div class="card__description text-rows text-rows-lg">
+                    <p>
+                      Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                      Подается с соевым соусом, который мы готовим на нашей
+                      кухне. Добавляем обжаренные тигровые креветки.
+                    </p>
+                  </div>
+                  <p class="card__note card__decor">190 гр./30 гр.</p>
+                </div>
+                <div class="card__panel">
+                  <p class="card__caption card__price">570 ₽</p>
+                  <button
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <h3 class="card__title">Бефстроганов</h3>
+                  <div class="card__description">
+                    <p>
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами.
+                    </p>
+                  </div>
+                  <p class="card__note card__note_content_time">
+                    200 гр./130 гр./30 гр.
+                    <span class="card__time"
+                      ><span class="icon icon--type-time"></span>45м</span
+                    >
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
               <article class="card">
                 <div class="card__picture">
                   <img
@@ -144,6 +198,36 @@
                   ></button>
                 </div>
                 <div class="card__main-info">
+                  <h3 class="card__title">Поке с обжаренным филе индейки</h3>
+                  <div class="card__description visually-hidden">
+                    <p>
+                      Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                      Подается с соевым соусом, который мы готовим на нашей
+                      кухне. Добавляем быстро обжаренный филе индейки.
+                    </p>
+                  </div>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__panel">
+                  <p class="card__caption card__price">570 ₽</p>
+                  <div class="card__buttons">
+                    <button
+                      class="icon-button icon-button_theme_outline icon icon--type-minus"
+                      aria-label="Удалить"
+                    ></button>
+                    <p class="card__caption card__count">1</p>
+                    <button
+                      class="icon-button icon-button_theme_main icon icon--type-plus"
+                      aria-label="Добавить"
+                    ></button>
+                  </div>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
                   <h3 class="card__title">Бефстроганов</h3>
                   <div class="card__description">
                     <p>
@@ -151,17 +235,41 @@
                       свежими помидорами.
                     </p>
                   </div>
+                  <p class="card__note card__note_content_time">
+                    200 гр./130 гр./30 гр.
+                    <span class="card__time"
+                      ><span class="icon icon--type-time"></span>45м</span
+                    >
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title text-rows-lg">
+                    Салат с жареными тигровыми креветками и копчеными помидорами
+                    черри
+                  </h3>
+                  <div class="card__description"></div>
                   <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
                 </div>
                 <div class="card__panel">
                   <p class="card__caption card__price">570 ₽</p>
                   <button
-                    class="icon-button icon icon--type-minus card__button"
-                    aria-label="Удалить"
-                  ></button>
-                  <p class="card__caption card__count">1</p>
-                  <button
-                    class="icon-button icon icon--type-plus card__button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
                     aria-label="Добавить"
                   ></button>
                 </div>
@@ -171,21 +279,19 @@
                     type="button"
                     aria-label="Закрыть детальную информацию"
                   ></button>
-                  <div class="card__main-info">
-                    <h3 class="card__title">Бефстроганов</h3>
-                    <div class="card__description">
-                      <p>
-                        Фирменное блюдо. Подаем с легким салатным миксом со
-                        свежими помидорами.
-                      </p>
-                    </div>
-                    <p class="card__note card__note_content_time">
-                      200 гр./130 гр./30 гр.
-                      <span class="card__time"
-                        ><span class="icon icon--type-time"></span>45м</span
-                      >
+                  <h3 class="card__title">Бефстроганов</h3>
+                  <div class="card__description">
+                    <p>
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами.
                     </p>
                   </div>
+                  <p class="card__note card__note_content_time">
+                    200 гр./130 гр./30 гр.
+                    <span class="card__time"
+                      ><span class="icon icon--type-time"></span>45м</span
+                    >
+                  </p>
                 </div>
               </article>
             </li>

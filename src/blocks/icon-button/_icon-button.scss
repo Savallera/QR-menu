@@ -6,7 +6,7 @@
   inline-size: 2em;
   block-size: 2em;
   color: inherit;
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-md);
   transition: transform 0.35s;
 
   &:active {
@@ -22,5 +22,10 @@
     color: var(--white);
     background-color: var(--main-color);
     border-color: var(--main-color);
+  }
+
+  &_actived {
+    color: var(--main-color);
+    pointer-events: none;
   }
 }
