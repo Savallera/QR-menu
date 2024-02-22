@@ -27,6 +27,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(10em, 100%), 1fr));
     gap: 0.5em;
+
+    &_one-column {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card-deck-item {

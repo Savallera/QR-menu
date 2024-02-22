@@ -6,8 +6,8 @@
   box-shadow: var(--box-shadow-sm);
   padding: 0.5em;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 0.5em;
 
   &__picture {
@@ -16,8 +16,8 @@
 
   &__image {
     inline-size: 100%;
-    display: block;
     aspect-ratio: 1;
+    display: block;
     object-fit: cover;
     object-position: center;
     border-radius: var(--border-radius-lg);
@@ -33,15 +33,10 @@
   }
 
   &__main-info {
-    flex: auto;
-
+    block-size: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-
-    .card__note {
-      margin-block-start: auto;
-    }
   }
 
   &__title {
@@ -55,11 +50,18 @@
   }
 
   &__note {
+    margin-block-start: auto;
     align-self: flex-start;
     font-size: var(--text-font-sm);
     color: var(--text-low-color);
 
     &_content_time {
+      margin-block-start: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
   }
 
@@ -74,12 +76,22 @@
     align-items: center;
   }
 
+  &__time-icon {
+    flex: none;
+    inline-size: 1rem;
+    block-size: 1rem;
+  }
+
   &__controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5em;
+
+    &_with-count {
+      justify-content: center;
+    }
   }
 
   &__caption {
@@ -101,19 +113,26 @@
     background-color: var(--bg-blur-color);
     border-radius: var(--border-radius-lg);
     backdrop-filter: blur(15px);
-    padding: 0.5em 1em;
+    padding: 2em 1em;
     display: flex;
-    gap: 0.5em;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--text-low-color);
+    align-items: center;
 
+    color: var(--text-low-color);
     @extend %hidden-block;
   }
 
   &__close-button {
     position: absolute;
     inset: 0.5em 0.5em auto auto;
+    color: var(--icon-button-color);
+  }
+
+  &__detail-modal-main-info {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    max-block-size: 100%;
+    overflow-y: auto;
   }
 
   &__count {
@@ -121,9 +140,33 @@
     inline-size: 2.5rem;
   }
 
-  &_detail-modal-opened {
+  &_detail-opened {
     .card__detail-modal {
       @extend %visibility-block;
+    }
+  }
+
+  &_orientation-gorizontal {
+    grid-template-columns: 9.375em 1fr;
+    grid-template-rows: 1fr auto;
+
+    .card__picture {
+      grid-row: span 2;
+    }
+    .card__image {
+      block-size: 100%;
+    }
+
+    .card__note_content_time {
+      align-self: center;
+    }
+
+    .card__buttons {
+      inline-size: initial;
+    }
+
+    .card__count {
+      inline-size: initial;
     }
   }
 }

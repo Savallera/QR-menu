@@ -19,6 +19,7 @@
   --text-color: var(--grey-800);
   --text-low-color: var(--grey-600);
   --button-color: var(--grey-800);
+  --icon-button-color: var(--grey-400);
 
   --main-font-family: 'Open Sans', sans-serif;
   --heading-font-family: 'Raleway', sans-serif;
@@ -61,5 +62,6 @@
     --text-color: var(--white);
     --text-low-color: var(--grey-200);
     --button-color: var(--main-color);
+    --icon-button-color: var(--grey-300);
   }
 }
