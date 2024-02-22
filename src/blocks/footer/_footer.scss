@@ -1,0 +1,9 @@
+.footer {
+  padding: 1em;
+  background-color: var(--bg-footer-color);
+
+  &__author {
+    font-size: var(--text-font-sm);
+    color: var(--text-low-color);
+  }
+}

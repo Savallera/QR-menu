@@ -1,0 +1,40 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--bg-blur-color);
+  backdrop-filter: blur(15px);
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  padding: 1em 1em 3em;
+
+  @extend %hidden-block;
+
+  &__container {
+    margin: auto;
+  }
+  &__close-button {
+    display: block;
+    margin-inline-start: auto;
+    color: var(--icon-button-color);
+  }
+
+  &__content {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &_opened {
+    @extend %visibility-block;
+  }
+}

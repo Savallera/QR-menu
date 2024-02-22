@@ -1,0 +1,32 @@
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--bg-low-color);
+  border-radius: var(--border-radius-lg);
+
+  &:has(:focus-visible) {
+    box-shadow: var(--box-shadow-selected);
+  }
+
+  &__input {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    inline-size: 100%;
+    font-size: var(--text-font-md);
+    padding: 0;
+
+    @include placeholder {
+      color: var(--text-low-color);
+    }
+  }
+
+  &__label-icon {
+    flex: none;
+    inline-size: 1.5em;
+    block-size: 1.5em;
+    color: var(--text-low-color);
+  }
+}

@@ -1,0 +1,29 @@
+.button {
+  background-color: var(--button-color);
+  color: var(--white);
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  inline-size: 100%;
+  border-radius: var(--border-radius-lg);
+  transition: transform 0.35s;
+
+  &:active {
+    transform: scale(1.05);
+  }
+
+  &__text {
+    font-size: var(--text-font-md);
+    font-variation-settings: 'wght' 600;
+  }
+
+  &__text-accent {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 700;
+  }
+
+  &_theme_main {
+    color: var(--white);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+}

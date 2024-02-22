@@ -11,6 +11,7 @@
 
   --bg-color: var(--white);
   --bg-low-color: var(--grey-100);
+  --bg-footer-color: var(--grey-200);
   --bg-blur-color: rgb(255 255 255 / 0.8);
 
   --main-color: #f43f5e;
@@ -57,6 +58,7 @@
   :root {
     --bg-color: var(--grey-800);
     --bg-low-color: var(--grey-700);
+    --bg-footer-color: var(--grey-600);
     --bg-blur-color: rgb(47 60 51 / 0.8);
 
     --text-color: var(--white);
