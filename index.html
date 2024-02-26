@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://test.ru" />
+  <meta property="og:image" content="./images/images/social-image.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="robots" content="index, follow" />
+  <meta name="copyright" content="https://test.ru" />
+  <link rel="icon" href="./images/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/styles.min.css" />
+</head>
+
+  <body>
+    <div class="page">
+      <header class="header"></header>
+
+      <main class="page__content">
+        <section class="main-banner">
+          <img
+            src="https://w.forfun.com/fetch/63/63514c2b28a7858ec51b5462f461bdf9.jpeg"
+            alt="Описание баннера"
+            class="main-banner__image"
+          />
+          <div class="main-banner__panel">
+            <button
+              class="icon-button icon icon--type-search"
+              type="button"
+              aria-label="Поиск"
+            ></button>
+            <div class="lang-panel">
+              <button
+                class="lang-panel__button"
+                type="button"
+                aria-label="Выбор языка"
+              >
+                <span class="lang-panel__button-text">RU</span>
+                <span
+                  class="lang-panel__button-icon icon icon--type-drop-down"
+                ></span>
+              </button>
+              <div class="lang-panel__container">
+                <ul class="lang-panel__list">
+                  <li class="lang-panel__item lang-panel__item_actived">
+                    <span class="lang-panel__accent">RU</span> - Русский
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">EN</span> - English
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">FR</span> - Français
+                  </li>
+                  <li class="lang-panel__item">
+                    <span class="lang-panel__accent">DE</span> - German
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-banner__title-block">
+            <div class="main-banner__logo">
+              <img
+                class="main-banner__logo-image"
+                src="./images/favicon/favicon.svg"
+                alt="Описание логотипа"
+              />
+            </div>
+            <h1 class="main-banner__title">Самое уютное местечко на планете</h1>
+          </div>
+        </section>
+        <!-- menu_fixed -->
+        <nav class="menu">
+          <!-- visually-hidden -->
+          <div class="field visually-hidden">
+            <div class="field__inner">
+              <label
+                class="icon icon--type-search field__label-icon"
+                for="search"
+              ></label>
+              <input
+                type="search"
+                class="field__input"
+                placeholder="Какое блюдо будем искать?"
+                name="search"
+              />
+            </div>
+          </div>
+          <div class="menu__overflow">
+            <ul class="menu__list">
+              <li class="menu__item menu__item_actived">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <h3 class="menu__item-title">Горячие блюда</h3>
+              </li>
+              <li class="menu__item">
+                <!-- Когда не выбрана картинка, замена на иконку -->
+                <div class="menu__image menu__image_role_pseudo">
+                  <svg
+                    class="menu__image-pseudo-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                  >
+                    <use href="./images/icons.svg#meat"></use>
+                  </svg>
+                </div>
+                <h3 class="menu__item-title">Салаты</h3>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <h3 class="menu__item-title">Закуски</h3>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <h3 class="menu__item-title">Напитки</h3>
+              </li>
+              <li class="menu__item">
+                <img
+                  class="menu__image"
+                  src="./images/image-placeholder.svg"
+                  alt="Описание картинки"
+                />
+                <h3 class="menu__item-title">Алкоголь</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__overflow">
+            <ul class="menu__sub-list">
+              <li class="menu__sub-item menu__sub-item_actived">
+                <p class="menu__text">Мясо</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Рыба</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Вегетарианские блюда</p>
+              </li>
+              <li class="menu__sub-item">
+                <p class="menu__text">Мясо</p>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="page__section page__bg-low">
+          <div class="page__title-block">
+            <h2 class="page__title">Мясо / Свинина</h2>
+            <div class="page__controls">
+              <button
+                class="icon-button icon-button_actived icon icon--type-card-deck"
+                type="button"
+                aria-label="Плитка"
+              ></button>
+              <button
+                class="icon-button icon icon--type-list"
+                type="button"
+                aria-label="Список"
+              ></button>
+            </div>
+          </div>
+          <ul class="page__card-deck">
+            <li class="page__card-deck-item">
+              <!-- Вариант 1 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title text-rows-lg">
+                    Салат с жареными тигровыми креветками и копчеными помидорами
+                    черри
+                  </h3>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">570 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">
+                      Салат с жареными тигровыми креветками и копчеными
+                      помидорами черри
+                    </h3>
+                    <p class="card__description">
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами. Фирменное блюдо. Подаем с легким
+                      салатным миксом со свежими помидорами. Фирменное блюдо.
+                      Подаем с легким салатным миксом со свежими помидорами.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      200 гр./130 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >45м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 2 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Поке с креветками</h3>
+                  <p class="card__description text-rows-lg">
+                    Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                    Подается с соевым соусом, который мы готовим на нашей кухне.
+                    Добавляем обжаренные тигровые креветки.
+                  </p>
+                  <p class="card__note card__decor">190 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">570 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">Поке с креветками</h3>
+                    <p class="card__description">
+                      Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                      Подается с соевым соусом, который мы готовим на нашей
+                      кухне. Добавляем обжаренные тигровые креветки.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      190 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >25м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 3 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Дорадо с овощами</h3>
+                  <p class="card__description">
+                    Подаем с картофелем «бэби», капустой брокколи и маслинами.
+                  </p>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1180 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 4 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">
+                    Палтус запеченный под хрустящей корочкой
+                  </h3>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1100 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 5 -->
+              <article class="card card_detail-opened">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Дорадо с овощами</h3>
+                  <p class="card__description text-rows-lg">
+                    Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                    Подается с соевым соусом, который мы готовим на нашей кухне.
+                    Добавляем обжаренные тигровые креветки.
+                  </p>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1180 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">
+                      Салат с жареными тигровыми креветками и копчеными
+                      помидорами черри
+                    </h3>
+                    <p class="card__description">
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      200 гр./130 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >45м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 7 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Дорадо с овощами</h3>
+                  <p class="card__description">
+                    Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                  </p>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls card__controls_with-count">
+                  <p class="card__caption">1180 ₽</p>
+                  <div class="card__buttons">
+                    <button
+                      type="button"
+                      class="icon-button icon-button_theme_outline icon icon--type-minus"
+                      aria-label="Удалить"
+                    ></button>
+                    <input type="number" value="2" class="card__count" />
+                    <button
+                      type="button"
+                      class="icon-button icon-button_theme_main icon icon--type-plus"
+                      aria-label="Добавить"
+                    ></button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <!-- Группировка по категориям в меню -->
+          <h2 class="page__title">Мясо / Говядина</h2>
+          <ul class="page__card-deck">
+            <li class="page__card-deck-item">
+              <!-- Вариант 1 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title text-rows-lg">
+                    Салат с жареными тигровыми креветками и копчеными помидорами
+                    черри
+                  </h3>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">570 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">
+                      Салат с жареными тигровыми креветками и копчеными
+                      помидорами черри
+                    </h3>
+                    <p class="card__description">
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами. Фирменное блюдо. Подаем с легким
+                      салатным миксом со свежими помидорами. Фирменное блюдо.
+                      Подаем с легким салатным миксом со свежими помидорами.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      200 гр./130 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >45м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 2 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Поке с креветками</h3>
+                  <p class="card__description text-rows-lg">
+                    Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                    Подается с соевым соусом, который мы готовим на нашей кухне.
+                    Добавляем обжаренные тигровые креветки.
+                  </p>
+                  <p class="card__note card__decor">190 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">570 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">Поке с креветками</h3>
+                    <p class="card__description">
+                      Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                      Подается с соевым соусом, который мы готовим на нашей
+                      кухне. Добавляем обжаренные тигровые креветки.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      190 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >25м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 3 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Дорадо с овощами</h3>
+                  <p class="card__description">
+                    Подаем с картофелем «бэби», капустой брокколи и маслинами.
+                  </p>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1180 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 4 -->
+              <article class="card">
+                <div class="card__picture">
+                  <img
+                    src="./images/image-placeholder.svg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">
+                    Палтус запеченный под хрустящей корочкой
+                  </h3>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1100 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+              </article>
+            </li>
+            <li class="page__card-deck-item">
+              <!-- Вариант 5 -->
+              <article class="card card_detail-opened">
+                <div class="card__picture">
+                  <img
+                    src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                    alt="Описание фото"
+                    class="card__image"
+                  />
+                  <button
+                    class="icon-button icon icon--type-info card__info-button"
+                    type="button"
+                    aria-label="Детальная информация"
+                  ></button>
+                </div>
+                <div class="card__main-info">
+                  <h3 class="card__title">Дорадо с овощами</h3>
+                  <p class="card__description text-rows-lg">
+                    Блюдо из свежих, отварных и маринованных овощей и фруктов.
+                    Подается с соевым соусом, который мы готовим на нашей кухне.
+                    Добавляем обжаренные тигровые креветки.
+                  </p>
+                  <p class="card__note card__decor">200 гр./130 гр./30 гр.</p>
+                </div>
+                <div class="card__controls">
+                  <p class="card__caption">1180 ₽</p>
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <div class="card__detail-modal">
+                  <button
+                    class="icon-button icon icon--type-close card__close-button"
+                    type="button"
+                    aria-label="Закрыть детальную информацию"
+                  ></button>
+                  <div class="card__detail-modal-main-info">
+                    <h3 class="card__title">
+                      Салат с жареными тигровыми креветками и копчеными
+                      помидорами черри
+                    </h3>
+                    <p class="card__description">
+                      Фирменное блюдо. Подаем с легким салатным миксом со
+                      свежими помидорами.
+                    </p>
+                    <p class="card__note card__note_content_time">
+                      200 гр./130 гр./30 гр.
+                      <span class="card__time"
+                        ><span
+                          class="card__time-icon icon icon--type-time"
+                        ></span
+                        >45м</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="order-panel">
+          <a href="./order.html" class="button order-panel__button">
+            <span class="button__text">
+              Продолжить
+              <span class="button__text-accent">1879 ₽</span>
+            </span>
+          </a>
+        </section>
+        <div class="popup">
+          <div class="popup__container">
+            <button
+              class="icon-button icon icon--type-close popup__close-button"
+              type="button"
+              aria-label="Закрыть модальное окно"
+            ></button>
+            <div class="popup__content">
+              <img
+                src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                alt="Описание фото"
+                class="popup__image"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+  <p class="footer__author">— QR-меню —</p>
+</footer>
+
+    </div>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
