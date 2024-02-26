@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
+    // gap: 0.5em;
   }
 
   &__detail-modal {
@@ -137,7 +137,15 @@
 
   &__count {
     text-align: center;
-    inline-size: 2.5rem;
+    inline-size: 3.125rem;
+
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.25em;
+    font-variation-settings: 'wght' 700;
+    font-family: inherit;
   }
 
   &_detail-opened {
@@ -161,12 +169,16 @@
       align-self: center;
     }
 
+    .card__controls_with-count {
+      justify-content: space-between;
+    }
+
     .card__buttons {
       inline-size: initial;
     }
 
     .card__count {
-      inline-size: initial;
+      inline-size: 2rem;
     }
   }
 }

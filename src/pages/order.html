@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Оформление заказа"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content page__bg-low order">
+        <section class="nav-panel">
+          <a
+            href="./index.html"
+            class="icon-button icon icon--type-back nav-panel__button"
+            aria-label="Назад"
+          ></a>
+          <h1 class="page__title nav-panel__title">Ваш заказ</h1>
+          <button
+            type="reset"
+            class="icon-button icon icon--type-trash nav-panel__button"
+            aria-label="Очистить"
+          ></button>
+        </section>
+        <form action="" class="order__card order__indent order__form">
+          <ul class="order__list order__decoration-bottom">
+            <li>
+              <article class="order__item">
+                <img
+                  src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                  alt="Описание фото"
+                  class="order__item-image"
+                />
+                <div class="order__item-info">
+                  <h2 class="order__title">
+                    Салат с жареными тигровыми креветками и копчеными помидорами
+                    черри
+                  </h2>
+                  <p class="order__caption">570 ₽</p>
+                </div>
+                <div class="order__buttons">
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-minus order__button"
+                    aria-label="Удалить"
+                  ></button>
+                  <input type="number" value="1" class="order__count" />
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus order__button"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <p class="order__price">570 ₽</p>
+              </article>
+            </li>
+            <li>
+              <article class="order__item">
+                <img
+                  src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                  alt="Описание фото"
+                  class="order__item-image"
+                />
+                <div class="order__item-info">
+                  <h2 class="order__title">Дорадо с овощами</h2>
+                  <p class="order__caption">1180 ₽</p>
+                </div>
+                <div class="order__buttons">
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-minus order__button"
+                    aria-label="Удалить"
+                  ></button>
+                  <input type="number" value="10" class="order__count" />
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus order__button"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <p class="order__price">1180 ₽</p>
+              </article>
+            </li>
+            <li>
+              <article class="order__item">
+                <img
+                  src="https://eda.premier46.ru/components/com_jshopping/files/img_products/full_Untitled_Panorama-10______kopiya.jpg"
+                  alt="Описание фото"
+                  class="order__item-image"
+                />
+                <div class="order__item-info">
+                  <h2 class="order__title">Бефстроганов</h2>
+                  <p class="order__caption">570 ₽</p>
+                </div>
+                <div class="order__buttons">
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-minus order__button"
+                    aria-label="Удалить"
+                  ></button>
+                  <input type="number" value="2" class="order__count" />
+                  <button
+                    type="button"
+                    class="icon-button icon-button_theme_outline icon icon--type-plus order__button"
+                    aria-label="Добавить"
+                  ></button>
+                </div>
+                <p class="order__price">15040 ₽</p>
+              </article>
+            </li>
+          </ul>
+          <div class="order__quests">
+            <h3 class="order__title order__title_light">Кол-во гостей</h3>
+            <div class="order__buttons">
+              <button
+                type="button"
+                class="icon-button icon-button_theme_outline icon icon--type-minus order__button"
+                aria-label="Удалить"
+              ></button>
+              <input type="number" value="2" class="order__count" />
+              <button
+                type="button"
+                class="icon-button icon-button_theme_outline icon icon--type-plus order__button"
+                aria-label="Добавить"
+              ></button>
+            </div>
+          </div>
+          <a href="./index.html" class="button button_theme_main">
+            <span class="icon icon--type-plus button__icon"></span>
+            <span class="button__text">Добавить блюдо</span>
+          </a>
+          <div class="field order__field">
+            <label class="field__label" for="order-description"
+              >Укажите особые пожелания к заказу</label
+            >
+            <div class="field__inner field__inner_theme_outline">
+              <textarea
+                class="field__input"
+                name="order-description"
+                id="order-description"
+                rows="5"
+                placeholder="Не добавляйте помидоры в бефстроганов"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <section class="order-panel">
+          <a href="./order-confirmation.html" class="button order-panel__button">
+            <span class="button__text button__text_columns">
+              <span class="button__text-accent">1879 ₽</span>
+              Заказать
+            </span>
+          </a>
+        </section>
+      </main>
+      @@include("../blocks/footer/footer.html")
+    </div>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>

@@ -1,4 +1,7 @@
 .button {
+  display: block;
+  text-align: center;
+  text-decoration: unset;
   background-color: var(--button-color);
   color: var(--white);
   border: 1px solid transparent;
@@ -14,11 +17,27 @@
   &__text {
     font-size: var(--text-font-md);
     font-variation-settings: 'wght' 600;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    &_columns {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__text-accent {
     font-size: 1.25rem;
     font-variation-settings: 'wght' 700;
+  }
+
+  &__icon {
+    display: inline-block;
+    inline-size: 1.5em;
+    block-size: 1.5em;
+    vertical-align: middle;
   }
 
   &_theme_main {

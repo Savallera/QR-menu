@@ -1,4 +1,4 @@
-const cardList = document.querySelector('.page__card-deck');
+const cardLists = document.querySelectorAll('.page__card-deck');
 const cards = document.querySelectorAll('.card');
 
 const cardDeckButton = document.querySelector('.icon--type-card-deck');
@@ -6,7 +6,7 @@ const listButton = document.querySelector('.icon--type-list');
 const changeViewOnCardDeck = (event) => {
   listButton.classList.remove('icon-button_actived');
   cardDeckButton.classList.add('icon-button_actived');
-  cardList.classList.remove('page__card-deck_one-column');
+  cardLists.forEach((list) => list.classList.remove('page__card-deck_wide-cards'));
   cards.forEach((card) => {
     card.classList.remove('card_orientation-gorizontal');
   });
@@ -15,7 +15,7 @@ const changeViewOnCardDeck = (event) => {
 const changeViewOnList = () => {
   cardDeckButton.classList.remove('icon-button_actived');
   listButton.classList.add('icon-button_actived');
-  cardList.classList.add('page__card-deck_one-column');
+  cardLists.forEach((list) => list.classList.add('page__card-deck_wide-cards'));
   cards.forEach((card) => {
     card.classList.add('card_orientation-gorizontal');
   });

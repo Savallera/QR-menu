@@ -2,7 +2,6 @@
 .page {
   min-block-size: 100vh;
   min-block-size: 100dvb;
-  max-inline-size: 48em;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -17,10 +16,10 @@
     gap: 1em;
     background-color: var(--bg-color);
     border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+  }
 
-    &_bg-low {
-      background-color: var(--bg-low-color);
-    }
+  &__bg-low {
+    background-color: var(--bg-low-color);
   }
 
   &__card-deck {
@@ -28,8 +27,8 @@
     grid-template-columns: repeat(auto-fill, minmax(min(10em, 100%), 1fr));
     gap: 0.5em;
 
-    &_one-column {
-      grid-template-columns: 1fr;
+    &_wide-cards {
+      grid-template-columns: repeat(auto-fill, minmax(min(20em, 100%), 1fr));
     }
   }
 
@@ -47,7 +46,7 @@
   }
 
   &__title {
-    padding-block: .5rem;
+    padding-block: 0.5rem;
     font-family: var(--heading-font-family, 'Raleway', sans-serif);
     font-variation-settings: 'wght' 700;
     font-size: var(--heading-font-xl);
