@@ -10,11 +10,6 @@
   border-radius: var(--border-radius-lg);
   transition: transform 0.35s;
 
-  &:active {
-    transform: scale(1.05);
-    transition: 1s;
-  }
-
   &__text {
     font-size: var(--text-font-md);
     font-variation-settings: 'wght' 600;

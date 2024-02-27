@@ -7,12 +7,6 @@
   block-size: 2em;
   color: inherit;
   border-radius: var(--border-radius-md);
-  transition: transform 0.35s;
-
-  &:active {
-    transform: scale(1.2);
-    transition: 1s;
-  }
 
   &_theme_outline {
     color: var(--text-low-color);
