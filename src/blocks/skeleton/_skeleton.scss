@@ -1,7 +1,6 @@
 .skeleton {
   position: relative;
   overflow: hidden;
-  border-radius: var(--border-radius-md);
 
   &::before {
     content: '';
@@ -10,13 +9,7 @@
     inline-size: 100%;
     block-size: 100%;
     inset: 0;
-    // z-index: 1;
-    background-image: linear-gradient(
-      90deg,
-      var(--grey-100) 0%,
-      var(--grey-300) 50%,
-      var(--grey-100) 100%
-    );
+    background-image: var(--skeleton-gradient);
     background-size: 200% 100%;
     background-position: 0% 50%;
     animation: skeleton 2.5s linear infinite;

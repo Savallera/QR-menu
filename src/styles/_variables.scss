@@ -9,6 +9,12 @@
   --grey-100: #f5f5f5;
   --white: #ffffff;
 
+  --skeleton-gradient: linear-gradient(
+    90deg,
+    var(--grey-300) 0%,
+    var(--grey-100) 50%,
+    var(--grey-300) 100%
+  );
   --bg-color: var(--white);
   --bg-low-color: var(--grey-100);
   --bg-footer-color: var(--grey-200);
@@ -56,6 +62,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --skeleton-gradient: linear-gradient(
+      90deg,
+      var(--grey-800) 0%,
+      var(--grey-700) 50%,
+      var(--grey-800) 100%
+    );
     --bg-color: var(--grey-800);
     --bg-low-color: var(--grey-700);
     --bg-footer-color: var(--grey-600);
