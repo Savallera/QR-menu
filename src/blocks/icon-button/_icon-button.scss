@@ -11,10 +11,7 @@
 
   &:active {
     transform: scale(1.2);
-  }
-
-  &:focus-visible {
-    transform: scale(1.2);
+    transition: 1s;
   }
 
   &_theme_outline {

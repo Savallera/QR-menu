@@ -12,10 +12,7 @@
 
   &:active {
     transform: scale(1.05);
-  }
-
-  &:focus-visible {
-    transform: scale(1.05);
+    transition: 1s;
   }
 
   &__text {
