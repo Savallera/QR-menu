@@ -1,0 +1,30 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-low-color);
+
+  text-align: center;
+
+  &__card {
+    flex-basis: 311px;
+    min-block-size: 400px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--box-shadow-md);
+  }
+
+  &__link {
+    font-variation-settings: 'wght' 600;
+    text-decoration: unset;
+    font-size: var(--text-font-md);
+    color: var(--main-color);
+  }
+}
