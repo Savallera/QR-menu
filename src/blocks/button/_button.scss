@@ -14,6 +14,10 @@
     transform: scale(1.05);
   }
 
+  &:focus-visible {
+    transform: scale(1.05);
+  }
+
   &__text {
     font-size: var(--text-font-md);
     font-variation-settings: 'wght' 600;
