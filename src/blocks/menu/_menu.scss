@@ -25,6 +25,9 @@
     &_actived {
       color: var(--text-color);
 
+      .menu__item-title {
+        font-variation-settings: 'wght' 600;
+      }
       .menu__image {
         box-shadow: var(--box-shadow-selected);
       }
