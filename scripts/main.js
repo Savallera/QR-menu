@@ -1,17 +1,4 @@
 
-const iconButtons = document.querySelectorAll('.icon-button');
-const scaleButton = (event) => {
-  event.classList.add('animation-scale');
-  setTimeout(() => {
-    event.classList.remove('animation-scale');
-  }, 250);
-};
-iconButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    scaleButton(button);
-  });
-});
-
 const cardLists = document.querySelectorAll('.page__card-deck');
 const cards = document.querySelectorAll('.card');
 
@@ -57,6 +44,19 @@ cards.forEach((card) => {
       closeCardDetail(card);
     });
   }
+});
+
+const iconButtons = document.querySelectorAll('.icon-button');
+const scaleButton = (event) => {
+  event.classList.add('animation-scale');
+  setTimeout(() => {
+    event.classList.remove('animation-scale');
+  }, 250);
+};
+iconButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    scaleButton(button);
+  });
 });
 
 const langPanel = document.querySelector('.lang-panel');
@@ -111,7 +111,7 @@ const closeOrderPanel = () => {
   backAfterSuccessedOrder();
 };
 const successedOrder = () => {
-  orderHeader.querySelector('.order__title').classList.add('visually-hidden');
+  orderHeader.querySelector('.order__title-block').classList.add('visually-hidden');
   orderClearButton.classList.add('visually-hidden');
   orderEditContainer.classList.add('visually-hidden');
   orderSuccessContainer.classList.remove('visually-hidden');
