@@ -33,7 +33,7 @@ const closeOrderPanel = () => {
   backAfterSuccessedOrder();
 };
 const successedOrder = () => {
-  orderHeader.querySelector('.order__title').classList.add('visually-hidden');
+  orderHeader.querySelector('.order__title-block').classList.add('visually-hidden');
   orderClearButton.classList.add('visually-hidden');
   orderEditContainer.classList.add('visually-hidden');
   orderSuccessContainer.classList.remove('visually-hidden');

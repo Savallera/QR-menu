@@ -26,6 +26,13 @@
     padding: 1em;
   }
 
+  &__title-block {
+    flex: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     flex: auto;
     text-align: center;
