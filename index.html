@@ -30,7 +30,7 @@
         <!-- Главный баннер -->
         <section class="main-banner">
           <img
-            src="https://w.forfun.com/fetch/63/63514c2b28a7858ec51b5462f461bdf9.jpeg"
+            src="./images/main-banner__image.jpg"
             alt="Описание баннера"
             class="main-banner__image"
           />
@@ -77,8 +77,15 @@
                 alt="Описание логотипа"
               />
             </div>
-            <h1 class="main-banner__title">Электронное меню</h1>
+            <h1 class="main-banner__title">Итальянский ресторан «Италия»</h1>
           </div>
+          <button
+            type="button"
+            class="button button_theme_accent-text main-banner__button main-banner__button_role_waiter"
+          >
+            <span class="button__icon icon icon--type-cloche"></span>
+            <span class="button__text">Позвать официанта</span>
+          </button>
         </section>
         <!-- Меню, при прокрутке добавляется класс menu_fixed, для фиксации меню сверху -->
         <nav class="menu">
@@ -686,30 +693,132 @@
             </li>
           </ul>
         </section>
-        <!-- Панель с подтверждением заказа -->
-        <section class="order">
-          <div class="order__header">
+        <!-- Панель с вызовом официанта -->
+        <section class="side-panel side-panel_role_waiter-panel">
+          <div class="side-panel__header">
             <button
               type="button"
-              class="icon-button icon icon--type-back order__header-button order__header-button_type_back"
+              class="icon-button icon icon--type-back side-panel__header-button side-panel__header-button_type_back"
               aria-label="Назад"
             ></button>
-            <div class="order__title-block">
-              <h2 class="page__title order__title">Ваш заказ</h2>
-              <p class="order__text">Стол: 1</p>
+            <div class="side-panel__title-block">
+              <h2 class="page__title side-panel__title">Позвать официанта</h2>
+              <p class="side-panel__text">Стол: 1</p>
+            </div>
+          </div>
+          <!-- Форма заказа -->
+          <form action="" class="side-panel__card">
+            <div class="side-panel__indent side-panel__inner">
+              <h2 class="page__title side-panel__title">Выберите действие:</h2>
+            </div>
+            <ul
+              class="side-panel__list side-panel__list_no-gap side-panel__indent side-panel__decoration-top"
+            >
+              <li>
+                <label class="radio-item">
+                  <input
+                    type="radio"
+                    name="waiter"
+                    class="radio-item__checkbox"
+                  />
+                  <span class="radio-item__pseudo-checkbox"></span>
+                  <span class="radio-item__label-text">Позвать официанта</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio-item">
+                  <input
+                    type="radio"
+                    name="waiter"
+                    class="radio-item__checkbox"
+                  />
+                  <span class="radio-item__pseudo-checkbox"></span>
+                  <span class="radio-item__label-text"
+                    >Оплатить заказ наличными</span
+                  >
+                </label>
+              </li>
+              <li>
+                <label class="radio-item">
+                  <input
+                    type="radio"
+                    name="waiter"
+                    class="radio-item__checkbox"
+                  />
+                  <span class="radio-item__pseudo-checkbox"></span>
+                  <span class="radio-item__label-text"
+                    >Оплатить заказ картой</span
+                  >
+                </label>
+              </li>
+              <li>
+                <label class="radio-item">
+                  <input
+                    type="radio"
+                    name="waiter"
+                    class="radio-item__checkbox"
+                  />
+                  <span class="radio-item__pseudo-checkbox"></span>
+                  <span class="radio-item__label-text"
+                    >У меня сегодня день рождения</span
+                  >
+                </label>
+              </li>
+              <li>
+                <label class="radio-item radio-item_type_other">
+                  <input
+                    type="radio"
+                    name="waiter"
+                    id="waiter-other"
+                    class="radio-item__checkbox"
+                  />
+                  <span class="radio-item__pseudo-checkbox"></span>
+                  <span class="radio-item__label-text">Другое</span>
+                </label>
+              </li>
+            </ul>
+            <div
+              class="field side-panel__field side-panel__indent visually-hidden"
+            >
+              <label class="field__label" for="waiter-description"
+                >Комментарий к запросу</label
+              >
+              <div class="field__inner field__inner_theme_outline">
+                <textarea
+                  class="field__input"
+                  name="waiter-description"
+                  id="waiter-description"
+                  rows="5"
+                  placeholder="При необходимости уточните ваш запрос..."
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!-- Панель с подтверждением заказа -->
+        <section class="side-panel side-panel_role_order">
+          <div class="side-panel__header">
+            <button
+              type="button"
+              class="icon-button icon icon--type-back side-panel__header-button side-panel__header-button_type_back"
+              aria-label="Назад"
+            ></button>
+            <div class="side-panel__title-block">
+              <h2 class="page__title side-panel__title">Ваш заказ</h2>
+              <p class="side-panel__text">Стол: 1</p>
             </div>
             <button
               type="reset"
-              class="icon-button icon icon--type-trash order__header-button order__header-button_type_clear"
+              class="icon-button icon icon--type-trash side-panel__header-button side-panel__header-button_type_clear"
               aria-label="Очистить"
             ></button>
           </div>
           <!-- Форма заказа -->
           <form
             action=""
-            class="order__card order__indent order__card_type_edit"
+            class="side-panel__card side-panel__indent side-panel__card_type_edit"
           >
-            <ul class="order__list order__decoration-bottom">
+            <ul class="side-panel__list side-panel__decoration-bottom">
               <li>
                 <article class="order-item order-item_status_edit">
                   <img
@@ -813,12 +922,12 @@
             </article>
             <button
               type="button"
-              class="button button_theme_main order__add-more-button"
+              class="button button_theme_main side-panel__add-more-button"
             >
               <span class="icon icon--type-plus button__icon"></span>
               <span class="button__text">Добавить блюдо</span>
             </button>
-            <div class="field order__field">
+            <div class="field side-panel__field">
               <label class="field__label" for="order-description"
                 >Укажите особые пожелания к заказу</label
               >
@@ -834,10 +943,12 @@
             </div>
           </form>
           <!-- Заказ оформлен -->
-          <div class="order__card order__card_type_success visually-hidden">
-            <div class="order__indent order__inner">
+          <div
+            class="side-panel__card side-panel__card_type_success visually-hidden"
+          >
+            <div class="side-panel__indent side-panel__inner">
               <svg
-                class="order__picture"
+                class="side-panel__picture"
                 width="287"
                 height="153"
                 fill="none"
@@ -940,16 +1051,18 @@
                 />
               </svg>
               <div>
-                <h2 class="page__title order__title">Ваш заказ оформлен</h2>
-                <p class="order__text">Стол: 1</p>
+                <h2 class="page__title side-panel__title">
+                  Ваш заказ оформлен
+                </h2>
+                <p class="side-panel__text">Стол: 1</p>
               </div>
-              <p class="order__subtitle">
+              <p class="side-panel__subtitle">
                 В ближайшее время к вам подойдёт официант для уточнения деталей
                 заказа
               </p>
             </div>
             <ul
-              class="order__list order__indent order__decoration-top order__decoration-bottom"
+              class="side-panel__list side-panel__indent side-panel__decoration-top side-panel__decoration-bottom"
             >
               <li>
                 <article class="order-item order-item_status_success">
@@ -979,17 +1092,19 @@
                 </article>
               </li>
             </ul>
-            <div class="order__indent">
-              <p class="order__text">Кол-во гостей: 2</p>
-              <p class="order__text">Не добавляйте помидоры в бефстроганов</p>
+            <div class="side-panel__indent">
+              <p class="side-panel__text">Кол-во гостей: 2</p>
+              <p class="side-panel__text">
+                Не добавляйте помидоры в бефстроганов
+              </p>
             </div>
           </div>
         </section>
         <!-- Нижняя панель с кнопками. Изначально скрыта классом visually-hidden. Отображается после выбора первой позиции товара. -->
-        <section class="order-panel">
+        <section class="bottom-panel">
           <button
             type="button"
-            class="button order-panel__button order-panel__button_role_continue"
+            class="button bottom-panel__button bottom-panel__button_role_continue"
           >
             <span class="button__text">
               Продолжить
@@ -998,7 +1113,7 @@
           </button>
           <button
             type="button"
-            class="visually-hidden button order-panel__button order-panel__button_role_order"
+            class="button bottom-panel__button bottom-panel__button_role_order visually-hidden"
           >
             <span class="button__text button__text_columns"
               ><span class="button__text-accent">1879 ₽</span>Заказать</span
@@ -1006,10 +1121,16 @@
           </button>
           <button
             type="button"
-            class="visually-hidden button order-panel__button order-panel__button_role_new-order"
+            class="button bottom-panel__button bottom-panel__button_role_new-order visually-hidden"
           >
-            <span class="button__text"> Новый заказ </span>
+            <span class="button__text">Новый заказ</span>
           </button>
+          <button
+          type="button"
+          class="button bottom-panel__button bottom-panel__button_role_waiter visually-hidden"
+        >
+          <span class="button__text"> Позвать </span>
+        </button>
         </section>
         <!-- Превью фото товара -->
         <div class="popup">

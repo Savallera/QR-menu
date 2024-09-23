@@ -1,4 +1,17 @@
 
+const iconButtons = document.querySelectorAll('.icon-button');
+const scaleButton = (event) => {
+  event.classList.add('animation-scale');
+  setTimeout(() => {
+    event.classList.remove('animation-scale');
+  }, 250);
+};
+iconButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    scaleButton(button);
+  });
+});
+
 const cardLists = document.querySelectorAll('.page__card-deck');
 const cards = document.querySelectorAll('.card');
 
@@ -46,19 +59,6 @@ cards.forEach((card) => {
   }
 });
 
-const iconButtons = document.querySelectorAll('.icon-button');
-const scaleButton = (event) => {
-  event.classList.add('animation-scale');
-  setTimeout(() => {
-    event.classList.remove('animation-scale');
-  }, 250);
-};
-iconButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    scaleButton(button);
-  });
-});
-
 const langPanel = document.querySelector('.lang-panel');
 const langPanelContainer = document.querySelector('.lang-panel__container');
 const langPanelButton = document.querySelector('.lang-panel__button');
@@ -76,65 +76,46 @@ langPanelButton.addEventListener('click', () => {
   openLangPanel();
 });
 
-const orderContainer = document.querySelector('.order');
-const orderHeader = document.querySelector('.order__header');
-const orderEditContainer = document.querySelector('.order__card_type_edit');
-const orderSuccessContainer = document.querySelector(
-  '.order__card_type_success'
+const waiterContainer = document.querySelector('.side-panel_role_waiter-panel');
+const sidePanelHeader = waiterContainer.querySelector('.side-panel__header');
+const waiterPanelBackButton = waiterContainer.querySelector(
+  '.side-panel__header-button_type_back'
 );
-const orderContinueButton = document.querySelector(
-  '.order-panel__button_role_continue'
+const waiterList = waiterContainer.querySelector('.side-panel__list');
+const waiterField = waiterContainer.querySelector('.side-panel__field');
+const waiterOpenButton = document.querySelector(
+  '.main-banner__button_role_waiter'
 );
-const orderButton = document.querySelector('.order-panel__button_role_order');
-const newOrderButton = document.querySelector(
-  '.order-panel__button_role_new-order'
+const waiterSendButton = document.querySelector(
+  '.bottom-panel__button_role_waiter'
 );
-const orderBackButton = document.querySelector(
-  '.order__header-button_type_back'
-);
-const orderClearButton = document.querySelector(
-  '.order__header-button_type_clear'
-);
-const orderAddMoreButton = document.querySelector('.order__add-more-button');
-const openOrderPanel = () => {
-  orderContainer.classList.add('order_opened');
-  orderContinueButton.classList.add('visually-hidden');
-  orderButton.classList.remove('visually-hidden');
+const radioButton = document.querySelector('#waiter-other');
+const openWaiteContainer = () => {
+  waiterContainer.classList.add('side-panel_opened');
+  waiterSendButton.classList.remove('visually-hidden');
+  bottomPanelButtonContinue.classList.add('visually-hidden');
   document.body.style.overflow = 'hidden';
 };
-const closeOrderPanel = () => {
-  orderContainer.classList.remove('order_opened');
-  orderContinueButton.classList.remove('visually-hidden');
-  orderButton.classList.add('visually-hidden');
+const closeWaiteContainer = () => {
+  waiterContainer.classList.remove('side-panel_opened');
+  waiterSendButton.classList.add('visually-hidden');
+  bottomPanelButtonContinue.classList.remove('visually-hidden');
   document.body.style.overflow = 'initial';
-
-  backAfterSuccessedOrder();
+  waiterOpenButton.querySelector('.button__text').textContent =
+    'Позвать официанта еще раз';
 };
-const successedOrder = () => {
-  orderHeader.querySelector('.order__title-block').classList.add('visually-hidden');
-  orderClearButton.classList.add('visually-hidden');
-  orderEditContainer.classList.add('visually-hidden');
-  orderSuccessContainer.classList.remove('visually-hidden');
-  orderButton.classList.add('visually-hidden');
-  newOrderButton.classList.remove('visually-hidden');
-};
-const backAfterSuccessedOrder = () => {
-  newOrderButton.classList.add('visually-hidden');
-  orderHeader
-    .querySelector('.order__title')
-    .classList.remove('visually-hidden');
-  orderClearButton.classList.remove('visually-hidden');
-  orderEditContainer.classList.remove('visually-hidden');
-  orderSuccessContainer.classList.add('visually-hidden');
-  orderButton.classList.add('visually-hidden');
-  newOrderButton.classList.add('visually-hidden');
-};
-
-orderContinueButton.addEventListener('click', openOrderPanel);
-orderBackButton.addEventListener('click', closeOrderPanel);
-orderAddMoreButton.addEventListener('click', closeOrderPanel);
-orderButton.addEventListener('click', successedOrder);
-newOrderButton.addEventListener('click', closeOrderPanel);
+waiterOpenButton.addEventListener('click', openWaiteContainer);
+waiterSendButton.addEventListener('click', closeWaiteContainer);
+waiterPanelBackButton.addEventListener('click', closeWaiteContainer);
+document.addEventListener('change', () => {
+  if (radioButton.checked) {
+    waiterField.classList.remove('visually-hidden');
+    waiterList.classList.add('side-panel__decoration-bottom');
+  } else {
+    waiterField.classList.add('visually-hidden');
+    waiterList.classList.remove('side-panel__decoration-bottom');
+  }
+});
 
 const popup = document.querySelector('.popup');
 const openPopup = function () {
@@ -156,3 +137,68 @@ popup.addEventListener('click', (evt) => {
     closePopup();
   }
 });
+
+const orderContainer = document.querySelector('.side-panel_role_order');
+const orderHeader = orderContainer.querySelector('.side-panel__header');
+const orderTitle = orderHeader.querySelector('.side-panel__title-block');
+const orderBackButton = orderContainer.querySelector(
+  '.side-panel__header-button_type_back'
+);
+const orderClearButton = orderContainer.querySelector(
+  '.side-panel__header-button_type_clear'
+);
+const orderAddMoreButton = orderContainer.querySelector(
+  '.side-panel__add-more-button'
+);
+const orderEditContainer = orderContainer.querySelector(
+  '.side-panel__card_type_edit'
+);
+const orderSuccessContainer = orderContainer.querySelector(
+  '.side-panel__card_type_success'
+);
+const bottomPanelButtonContinue = document.querySelector(
+  '.bottom-panel__button_role_continue'
+);
+const bottomPanelButtonOrder = document.querySelector(
+  '.bottom-panel__button_role_order'
+);
+const bottomPanelButtonNewOrder = document.querySelector(
+  '.bottom-panel__button_role_new-order'
+);
+const openOrderContainer = () => {
+  orderContainer.classList.add('side-panel_opened');
+  bottomPanelButtonContinue.classList.add('visually-hidden');
+  bottomPanelButtonOrder.classList.remove('visually-hidden');
+  document.body.style.overflow = 'hidden';
+};
+const closeOrderContainer = () => {
+  orderContainer.classList.remove('side-panel_opened');
+  bottomPanelButtonContinue.classList.remove('visually-hidden');
+  bottomPanelButtonOrder.classList.add('visually-hidden');
+  document.body.style.overflow = 'initial';
+
+  backAfterSuccessedOrder();
+};
+const successedOrder = () => {
+  orderTitle.classList.add('visually-hidden');
+  orderClearButton.classList.add('visually-hidden');
+  orderEditContainer.classList.add('visually-hidden');
+  orderSuccessContainer.classList.remove('visually-hidden');
+  bottomPanelButtonOrder.classList.add('visually-hidden');
+  bottomPanelButtonNewOrder.classList.remove('visually-hidden');
+};
+const backAfterSuccessedOrder = () => {
+  bottomPanelButtonNewOrder.classList.add('visually-hidden');
+  orderTitle.classList.remove('visually-hidden');
+  orderClearButton.classList.remove('visually-hidden');
+  orderEditContainer.classList.remove('visually-hidden');
+  orderSuccessContainer.classList.add('visually-hidden');
+  bottomPanelButtonOrder.classList.add('visually-hidden');
+  bottomPanelButtonNewOrder.classList.add('visually-hidden');
+};
+
+orderBackButton.addEventListener('click', closeOrderContainer);
+orderAddMoreButton.addEventListener('click', closeOrderContainer);
+bottomPanelButtonContinue.addEventListener('click', openOrderContainer);
+bottomPanelButtonOrder.addEventListener('click', successedOrder);
+bottomPanelButtonNewOrder.addEventListener('click', closeOrderContainer);
