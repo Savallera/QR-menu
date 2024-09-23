@@ -1,4 +1,4 @@
-.order {
+.side-panel {
   position: fixed;
   inset: 0;
   overflow-y: auto;
@@ -81,6 +81,10 @@
   &__list {
     display: grid;
     gap: 0.5em;
+
+    &_no-gap {
+      gap: 0;
+    }
   }
 
   &__decoration-bottom {
@@ -93,8 +97,10 @@
     border-block-start: 1px solid var(--grey-300);
   }
 
-  &__field {
-    margin-block-start: 1.5em;
+  &__field {}
+
+  &__add-more-button {
+    margin-block-end: 1.5em;
   }
 
   &_opened {

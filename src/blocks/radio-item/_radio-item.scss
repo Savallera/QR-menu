@@ -1,0 +1,40 @@
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-block: 0.75em;
+
+  &:has(:focus-visible) {
+    outline: 2px solid var(--text-color, #272b37);
+  }
+
+  &__checkbox {
+    @extend %reset-checkbox;
+    display: none;
+
+    &:checked + .radio-item__pseudo-checkbox {
+      border-width: 0.5em;
+      border-color: var(--main-color);
+    }
+  }
+
+  &__pseudo-checkbox {
+    margin-inline-start: 0.5em;
+    flex-shrink: 0;
+    display: inline-block;
+    inline-size: 1.5em;
+    block-size: 1.5em;
+    min-inline-size: 1.5em;
+    max-inline-size: 1.5em;
+    border-radius: 50%;
+    vertical-align: middle;
+
+    background-color: var(--bg-color);
+    border: 1px solid var(--icon-button-color);
+  }
+
+  &__label-text {
+    flex: auto;
+    font-size: var(--text-font-md);
+  }
+}

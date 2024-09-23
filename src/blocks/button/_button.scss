@@ -14,6 +14,7 @@
     font-size: var(--text-font-md);
     font-variation-settings: 'wght' 600;
 
+    vertical-align: middle;
     display: inline-flex;
     align-items: center;
     gap: 1rem;
@@ -40,5 +41,11 @@
     color: var(--white);
     background-color: var(--main-color);
     border-color: var(--main-color);
+  }
+
+  &_theme_accent-text {
+    color: var(--white);
+    background-color: transparent;
+    border-color: transparent;
   }
 }

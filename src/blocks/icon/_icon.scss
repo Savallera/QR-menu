@@ -29,6 +29,9 @@
     &-close::before {
       mask-image: url('../images/icons.svg#close');
     }
+    &-cloche::before {
+      mask-image: url('../images/icons.svg#cloche');
+    }
     &-desserts::before {
       mask-image: url('../images/icons.svg#desserts');
     }

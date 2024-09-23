@@ -1,6 +1,11 @@
 .main-banner {
   color: var(--white);
   min-block-size: 15.625em;
+  padding-block-end: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: relative;
 
   &__image {
@@ -16,8 +21,8 @@
   }
 
   &__panel {
+    flex-shrink: 0;
     padding: 1em;
-    margin-block-end: 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +30,7 @@
   }
 
   &__title-block {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -51,5 +57,12 @@
     font-family: var(--heading-font-family, 'Raleway', sans-serif);
     font-size: var(--heading-font-xl);
     font-variation-settings: 'wght' 700;
+  }
+
+  &__button {
+    flex-shrink: 0;
+    align-self: flex-start;
+    inline-size: unset;
+    padding-block: 1em;
   }
 }

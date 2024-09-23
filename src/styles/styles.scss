@@ -9,6 +9,7 @@
 @import '../blocks/icon-button/icon-button';
 @import '../blocks/button/button';
 @import '../blocks/field/field';
+@import '../blocks/radio-item/radio-item';
 @import '../blocks/animation-scale/animation-scale';
 @import '../blocks/skeleton/skeleton';
 
@@ -19,8 +20,8 @@
 
 // Sections
 @import '../blocks/main-banner/main-banner';
-@import '../blocks/order-panel/order-panel';
-@import '../blocks/order/order';
+@import '../blocks/bottom-panel/bottom-panel';
+@import '../blocks/side-panel/side-panel';
 @import '../blocks/not-found/not-found';
 
 // Modals
