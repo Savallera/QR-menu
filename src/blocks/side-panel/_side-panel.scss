@@ -19,6 +19,9 @@
   flex-direction: column;
   gap: 2.5em;
 
+  max-inline-size: 768px;
+  margin-inline: auto;
+
   &__header {
     display: flex;
     align-items: center;
